@@ -16,8 +16,8 @@ function printGrades() {
     let o = document.querySelector('#output');
     let sum = 0;
     for (let i=0; i<grades.length; i++) {
-        sum += sum/grades.length;
-    }
+        sum += grades[i].grade;
+        }
     let avg = sum / grades.length;
     o.innerText = avg;
 }
